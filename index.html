@@ -56,7 +56,7 @@ function userActivityThrottler() {
     document.getElementById("app").innerHTML = `
       <h1>User is inactive = false</h1>
     `;
-     window.parent?.postMessage("experience-activity");
+     window.parent?.postMessage("experience-activity", "*");
     resetUserActivityTimeout();
   }
 
